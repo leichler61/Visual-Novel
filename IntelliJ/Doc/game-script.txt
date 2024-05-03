@@ -1,0 +1,798 @@
+SCRIPT GLOSSARY
+
+<>: system text, instructions for player
+“”: character dialogue spoken as written text
+(): character thoughts, known to the player but not to other characters
+{}: for bracketing if-statements for multiple choice dialogue options
+*: written sound
+
+>>>>>>>>>: short scene transition
+
+Loading...
+---->
+---------->
+---------------->: designated symbol for a long scene change
+
+===TEXT===: for telling players you are in a menu page
+
+The player username is substituted as Player.
+
+[x]: the threshold skill level that alters the route of the game
+
+/// this notation is used for all comments that will not be printed in the interface of the game
+
+\\\ this notation is used to describe images and scenes to be implemented
+
+Plain text without symbols or notation indicates narration
+
+MAIN SCRIPT
+
+===HOME===
+
+:::Voice of the World:::
+<type ‘START’ to start new game>
+
+Loading...
+---->
+---------->
+---------------->
+
+\\\black backdrop, white text appears
+
+<Welcome to the World of Anaideia, adventurer!. Press Enter to continue.>
+<In this world with a grand sky beyond one's reach and great plains beyond one’s sight, you shall start your adventure...>
+<As a retired hero who has once saved the world.>
+<What type of adventure awaits you?>
+
+>>>>>>>>>>
+
+\\\dark screen, text box appears
+
+*knock *knock
+
+*knock *knock
+
+You open your eyes in a dim room.
+
+*knock
+
+*knock
+
+*knock
+
+\\\screen flips from dark screen to outside of house, text box resurfaces moments after. Vin character portrait appears. Expression: open mouth, speaking, neutral (or if we don’t have resource, just smiling)
+
+Mysterious Person: “Hello! Is anyone home! Hello! So sorry to disturb you…”
+
+*creak
+
+Player: *grunts
+Player: “Who wakes up so early in the morning...”
+
+You look down at the glowy-eyed kid in front of your door.
+
+Player: “Who  are you, kid?”
+
+Mysterious Person: “I- I’m Vin!”
+
+Player: “Vin?”
+
+Vin: “Y-yes! A new hero!”
+
+Player: “?”
+
+Player: “A midget like you? Seriously?”
+(…did they replace me?)
+
+<type the corresponding number and press ‘Enter’ to select dialogue>
+<dialogue will affect the confidence of characters, affecting their skill level>
+<skill level affects combat prowess in battle minigames>
+
+///intro dialogue still pending
+
+Loading...
+---->
+---------->
+---------------->
+
+///Hero agrees to train Vin. First training event.
+
+<MINIGAME INITIATED>
+
+///Mushroom monster in Player’s backyard, Player sends Vin to get rid of it:
+
+Player: “Fine. I have something for you to do. Something heroic.”
+
+Vin: “Oh! What is it? I won’t let you down!”
+
+Player: “I need you to clean something up for me.”
+
+Vin: “A monster? A dragon?”
+
+Player: “A mushroom.”
+
+Vin: “A mushroom?”
+
+Player: “Yes. Its spores are poisonous. It’s a threat to the village.”
+
+Vin: “Doesn’t poisonous mean that it’s only harmful if you eat it?”
+
+Player: “And do you trust these villagers not to eat it? Besides, it puts up a hell of a fight. I need it gone.”
+
+Vin: “It’s a creature?”
+
+Player: “Yes, yes, now, go on. If you want to be a hero, this is what you have to do.”
+
+Vin: “Stop asking so many questions and just act, right?”
+
+Player: “No! Are you kidding? Ask questions! You want to just go in blind? Kill something that doesn’t need to be killed? Get killed yourself?”
+
+Vin: “Oh, but you said—”
+
+Player: “Sure, ask questions, but don’t doubt me. I know what I’m talking about. The thing is poisonous or venomous or whatever you have it. It’s been killing deer in the woods for weeks and it’s lodged itself in my yard. Get rid of it before it graduates from eating deer to eating people.”
+
+Vin: “Yes, captain! Will do!”
+
+<MINIGAME INITIATED>
+
+///AFTER MUSHROOM MONSTER, TRAINING EVENT 2, No pause
+
+Villager A: “HERO, PLEASE, HERO!”
+
+\\\ Villager A head portrait barge into screen (left to right, while Vin’s portrait shifts right)
+
+Player:
+1) “What happened?”
+2) “Who are you?’
+3) “Hey.”
+
+Villager A: “MY DAUGHTER, SHE, SHE!”
+
+Player:
+1) “What did she do?”
+2) “What happened to her?”
+3) “Calm down now, don’t lose consciousness.”
+
+Villager A: *deep breaths*
+
+Villager A: “She went out to pick berries... and she didn’t come back all day! Then when I went to find her, I heard her voice in the gorge beside the lake."
+“She’s in there and can’t get out! PLEASE SAVE HER, THERE ARE MONSTERS THERE.”
+
+Player: “...”
+
+Player:
+1) “Okay kid, your turn to shine again.”
+2) “...oh boy.”
+3) “Why can’t you save her? I’m retired!”
+
+Vin:
+{If 1} “Let’s go!”
+{else} “What are you doing? Let’s go save her!”
+
+
+Loading...
+---->
+---------->
+---------------->
+
+
+\\\ scenery change.
+
+Vin: “I’m going down now! Player, please watch my back!”
+
+Player:
+1) “Wait! You’re training’s not...”
+2) “They’re going to get themself killed...”
+3) *Jump in quickly to aid them*
+
+<MINIGAME INITIATED>
+
+<Monsters appear in the gorge beside the village. You hear the faint cry of help of a girl from within.>
+
+/// minigame end, skill meter calculated.
+
+Villager A: “Oh, Lisa! Don’t even run off like that again!”
+
+You stare dumbfounded at Vin.
+
+If skill >[x]: (Perhaps they really are worth training.)
+If <[x]: (Are they really worth training?)
+
+<Training Phase Complete>
+
+Loading...
+---->
+---------->
+---------------->
+
+
+{If Vin Skill Meter Exceeds [x]}
+
+\\\ dark screen white text
+
+A month of training has passed…
+The young hero progresses smoothly,
+And it seems the peace of the world will be protected for yet another era...
+
+>>>>>>>>>>
+
+The night breeze whistles through the window.
+
+Vin dozed off in the living room.
+
+Player: (This kid... at least go sleep in their bed...)
+
+You laid a blanket over him, and silently left the house with your blade.
+
+\\\ cricket sound, image of forest at night
+
+*light string music start playing
+
+\\\ fade into black screen
+
+Bathed in the glow of fireflies, under the shimmering midnight moon,
+You draw your blade and let the scabbard lie...
+in the gentle moss and blooms.
+Spirits deep in the forest gaze.
+At your silver blade they swoon.
+Slowly, you too enter a daze,
+Memories flow from times of youth.
+Back when good friends weren’t few,
+Yet too rare was solitude.
+
+*Sword singing sound
+*tree falling sound x12, from slow to fast
+*dinging bell chime
+
+<You have regained the lost technique of the heroes: Blade of Rea.
+Skill meter +12 ///or however much is necessary to catch up to [x]>
+
+<WARNING: monsters approaching.>
+
+A horde of goblins rush out from the forest.
+
+Player: “Woo boy... this is gonna be...”
+
+<MINIGAME INITIATED>
+
+Player: “Phew... That was a workout.”
+
+You massage your shoulder and pick up the scabbard.
+
+Player: “Better get back soon before it gets too late...”
+
+Loading...
+---->
+---------->
+---------------->
+
+...you return to the entrance of the forest.
+
+The house was still dark, barely visible in the night.
+
+...but something wasn’t right.
+
+You reached for the handle of the door.
+
+You stopped.
+
+The crickets were quiet.
+
+The night was silent.
+
+You threw open the door.
+
+Vin wasn’t in the living room.
+
+You ran to their room.
+
+Player: “Vin! Where are you?”
+
+Empty. The entire house was empty.
+
+*SWOOSH*
+
+A sudden silver slashed through the darkness.
+
+*PANG*
+
+Player:
+1) “Who’s there!”
+2) “What the f***!”
+3)  *focus on dodging*
+
+Vin’s face emerges from the darkness. A foreign stoicness in their gaze sent shivers down your spine.
+
+Player:
+1) “Why did you attack me?”
+2) “What happened to you?”
+3) “EVIL SPIRIT LEAVE MY STUDENT AT ONCE.”
+
+Vin: “You seem confused...”
+
+Vin grinned.
+
+Vin: “I’ve been itching to slice that f***ing head off.” *****
+
+Player: “...”
+
+Vin: “To think the retired hero regained their techniques so soon, it seems I should’ve gotten rid of you earlier.”
+
+Player:
+1) “... I don’t know if you’ve lost it, or if you’re joking, but if you want a fight, you'll get a fight.”
+2) “...seems like you’re looking for a beating.”
+3) “...I never should have trusted again.”
+
+<MINIGAME INITIATED>
+
+\\\ Mini-game end, white screen
+
+Loading...
+---->
+---------->
+---------------->
+
+\\\ white screen fade
+
+{If Player Lost}
+
+The smoke of battle subsides
+
+Vin: “You’re pathetic, old geezer.”
+
+Player: “...”
+
+Vin: “What are you going to do now? The world’s forgotten you, your abilities and skills all rusted...”
+
+Player:
+1) “Just kill me!”
+2) “You talk too much.” *end your own life*
+3) “None of that really matters. You’ll know one day.”
+
+Vin:
+{If 1} “Oh hoho, I won’t let you die so easily. Someone very powerful wants you tortured for centuries.” *****
+{If 2} *CLANK
+Your sword was knocked away.
+Vin: “Don’t think it’ll end so easily.”
+{If 3} “Stop lecturing me.”
+Vin steps on Player.
+
+Player: *grunts*
+
+Player:
+1) “I still believe in the Vin I saw that day. You’re a good kid deep down.”
+2) “You deserve to rot in hell, you doubled face asshole!”
+3) *Look up to heaven.* “Is this what I get for doing good?”
+
+Vin: “I’ll let you in on a little secret before you go.”
+
+Vin leans in.
+
+“It was the king who wanted you dead.” *****
+
+Player’s eyes widened.
+
+Vin’s sword fell.
+
+<END>
+
+
+{If player wins}
+
+The smoke of battle subsides.
+
+Player:
+1) “You underestimated me, kid.”
+2) “The apprentice has yet to best the master.”
+3) “Why did you do that, kid?”
+
+Vin: “...”
+
+Player:
+1) *You put down your sword.* “Look kid, I don’t know what happened. But there’s still another chance.”
+2) “Get out of here and never come back.”
+3) *Kill them.*
+
+{if 1} Vin: “There’s no more chances for me.”
+
+{if 2} Vin slowly got up and sheathed their sword. Under the midnight moonlight, they vanished into the horizon, never to return.
+
+{if 3} <END>
+
+{if 1}}
+
+Player:
+1) “Sure there are, you’ve done nothing wrong. All we did was a midnight exchange of swords, all part of the training routine.”
+2) “Everyone makes mistakes, and everyone deserves a second chance.”
+3) “Only if you give up.”
+
+Vin: “F*** off, old geezer.”
+
+Player:
+1) “You’re the one in my house! If you want to leave, get out!”
+2) “Only if you truly want me to, otherwise I’ll always be here.”
+You enter your bedroom and go to bed.
+3) “There will always be a place you belong.”
+
+{If less than [x]}
+
+Player:
+1) “You are not ready. I knew I shouldn’t have done this.”
+2) “This isn’t safe for you. The world is too dangerous.”
+3) “I can’t be the one to train you. I’m not good enough, and if I’m not good enough, neither will you be.”
+
+Vin:
+{If 1} “No! I can work harder, just give me a chance.”
+{If 2} “That’s why there needs to be someone to protect it! I can be that person!”
+{If 3} “Please, you are the most respected hero in all of [country/town]. I just want to help people. I have to be enough.”
+
+Player: “Listen, kid, just go home. Don’t go out there and get yourself killed, trust me.”
+
+Vin: “I can do this! I will keep working and I won’t let you down.”
+Vin: “Please.”
+
+Player:
+1) “Sorry, kid.”
+2) “We’re done. Get out of here.”
+3) “It’s not about you letting me down. It’s about everything else.”
+
+You leave Vin standing there.
+///Can either keep the secret with Vin just looking sad and betrayed or can hint at the anger there on their face.
+
+Loading...
+---->
+---------->
+---------------->
+
+Time passes.
+
+The village is burning. A dragon stomps into the village. The people are afraid.
+
+You watch Vin.
+
+Vin: “Don’t worry! I will help you!”
+
+Vin tries to take a hit at the dragon and misses.
+
+Vin: "Wait!"
+
+Player: “Kid, get out of there!”
+
+Vin: “No! If you won’t help them, then I will!”
+
+Vin tries to hit and misses again or Vin tries to save a person and just ends up getting them/themself/both of them injured.
+
+Player:
+1) “You can’t do this. You can’t…”
+2) “You are going to get yourself killed! Run!”
+3) “This isn’t helping anyone!”
+
+Vin ignores you.
+
+Player:
+1) “I–I can.”
+2) “Goddamnit.”
+3) “Fine!”
+
+/// You join the battle and save the young hero. Minigame! Player has to be injured.
+/// If Player is already injured during gameplay, then fine.
+/// If Player is not injured during gameplay, there must be an unchangeable event after the minigame to get the Player injured.
+
+You, injured, look up at Vin, standing over you, holding a weapon. Their facade is gone.
+
+Player:
+1) “Kid?”
+2) “What happened? Are you hurt?”
+3) “Is it over?”
+
+Vin: /// all options are sinister
+{If 1} “Don’t call me that.”
+{If 2} “Not me. You.”
+{If 3} “Yes. It’s over.”
+
+Player: “Why are you...?”
+
+Vin: “Why do I hate you? Is that what you can’t even manage to ask?”
+
+Player:
+1) “What?”
+2) “Cut the act.”
+3) “I don’t have time for this.”
+
+Vin:
+{If 1} “You are so clueless. Oblivious to how you were played. Well. Not played, exactly. You were too incompetent even to do that.”
+{If 2} “Cut the act! Yes, it’s finally time for that, isn’t it. Time for you to learn the truth.”
+{If 3} “I know you don’t. You never have time for me, right? You never have time to even serve a single purpose, you worthless old geezer.”
+
+Player:
+{If 1} "Played. Enlighten me, then."
+{If 2} "Just get to the point."
+{If 3} "I told you to just go home. I don’t have time for you to get yourself killed."
+
+Vin: “Shut up and listen for once in your goddamn life.”
+Vin: “I just wanted some respect. Is that too much to ask? Some respect in this tiny, worthless, piece of garbage [country or town].”
+Vin: “And if I could ‘help’ some people to get it, then they wouldn’t know any better, stupid and ignorant as they are. You were supposed to be my ticket to do that. To get that goddamn respect. But you. couldn’t. even. do. that.”
+Vin: “No. You had to make me do this. This is your fault. If you had just paid attention to me, taught me like I asked. If you had given me the time of day. Just a little bit more respect. Well. Here we are now. And it’s on you.”
+
+Player:
+1) “You… caused this? You burned…”
+2) “My fault? I told you to drop it.”
+3) “You don’t know what you’re saying. You should never have done this.”
+
+Vin:
+{If 1} “Yes. Keep up, will you? I don’t have time for your stupidity.”
+{If 2} “And your goddamn word is law? I don’t have time to have this argument with you. You’ll never realize you’re wrong.”
+{If 3} “I never should have done this? You should have done the job you agreed to do. If you had done that, none of this would have happened. But I don’t have time to make you realize that. You’re just going to be stubborn until the day you die.”
+
+Player: “What is it exactly that you need time for?”
+
+You get up and put your hand on your weapon.
+
+Vin: “You finally got a clue. Yes, I’m going to kill you. And then I can pick up the pieces of this mess that you caused. Finally, people will know who I am and what I can do.”
+
+Player:
+1) “You don’t have to do this.”
+2) “Fine. Let’s fight.”
+3) “You’re going to regret that.”
+
+Vin:
+{If 1} “Oh, but I do.”
+{If 2} “Yes. Wearily accept your death.”
+{If 3} “Oh, I don’t think I will.”
+
+<MINIGAME INITIATED>
+
+Boss Battle Dialogue: NO DIALOGUE CHOICES
+
+If Vin succeeds in taking damage from Player, they may say one of the following:
+"Ha! Slowing down in your old age?"
+"Is that all you’ve got?"
+"I thought this would at least be somewhat of a challenge. Disappointing."
+"Unfortunately, I don’t have time for this. Let’s make it quick. Just die, will you?"
+"Your death will be quick. I’m not cruel. You are nothing more than a nuisance."
+
+If Vin takes damage, they may say one of the following:
+"Ah! Lucky hit!"
+"Why won’t you just die?"
+"You’ve been holding out on me! Too good to teach me those moves? Don’t worry. I don’t need them."
+"Stay still and die."
+"You! For once in your life, you have a single shred of competence, and it has to be now?"
+
+Throughout the battle, Vin may also say the following:
+"Honestly, you’ve held on longer than I thought. Long enough."
+"Let’s make this easy on all of us, shall we? Surrender."
+"You can’t win this!"
+"I’m going to take everything you have ever achieved!"
+"You cannot beat a hero!"
+"You are nothing!"
+"No one has any use for you anymore."
+"This is boring me. You’re only in the way."
+
+If we want Player to also talk, they can say the following:
+"You don’t have to do this. Just put the weapon down."
+"You may have fooled me, but they will never believe you!"
+"Kid, you have no idea what you just got yourself into."
+"I may be old, but I know how strong you are. It is not enough to beat me."
+"This isn’t what you want to do. Just think about this for a moment!"
+"Please. It doesn’t have to be this way."
+"Your annoying persistence will not save you now."
+"I have not taught you nearly everything that I know. You think you are enough?"
+"You did this! You burned everything—and for what? Fame? You’re delusional!"
+"You are no hero and you never will be."
+
+Boss Battle Dialogue: DIALOGUE CHOICES
+
+/// Options for Player’s dialogue in response to Vin are listed below each Vin line.
+
+If Vin succeeds in taking damage from Player, they may say one of the following:
+"Ha! Slowing down in your old age?"
+    1) "You’d be surprised."
+    2) "Not enough for you to get more than one lucky hit."
+    3) "Enough of this. I don’t care for your attempt at mockery."
+"Is that all you’ve got?"
+    1) "Your actions only show me how juvenile and immature you truly are."
+    2) "No. I don’t want to kill you."
+    3) "Focus on the fight, kid."
+"I thought this would at least be somewhat of a challenge. Disappointing."
+    1) "That isn’t the only disappointment around here."
+    2) "You would be nothing without me! Without what I taught you!"
+    3) "Trust me, you’ll face some challenge. You’ll regret not taking my advice and just going home."
+"Unfortunately, I don’t have time for this. Let’s make it quick. Just die, will you?"
+    1) "You keep saying that. You’re always running out of time."
+    2) "I have survived much worse than you, child."
+    3) "Yes. Let’s make this quick."
+"Your death will be quick. I’m not cruel. You are nothing more than a nuisance."
+    1) "Cruel is one way to describe it. What of the homes and the people you burned?"
+    2) "You need patience to deal with nuisances, or they overwhelm you. Unfortunately for you, patience is something neither of us has."
+    3) "You don’t have to do this. I won’t be the one who dies."
+
+If Vin takes damage to themself, they may say one of the following:
+"Ah! Lucky hit!"
+    1) "Of course."
+    2) "One of us is running out of luck, and I’ll tell you, it isn’t me."
+    3) "One of many."
+"Why won’t you just die?"
+    1) "You are not the first to ask that."
+    2) "Perhaps it is because you are too incompetent to kill me?"
+    3) "Kid, drop the delusion. You can’t truly believe you can best me."
+"You’ve been holding out on me! Too good to teach me those moves? Don’t worry. I don’t need them."
+    1) "Yes, you did not need me at all, as you claim. And yet..."
+    2) "Holding out on you? I owe you nothing."
+    3) "Do not project your own arrogance onto me."
+"Stay still and die."
+    1) "Getting frustrated, it seems?"
+    2) "We’ve been over this. Not in this lifetime."
+    3) "I will not sit down and let you kill me and this village with your vanity!"
+"You! For once in your life, you have a single shred of competence, and it has to be now?"
+    1) "Keep telling yourself that. There is a reason you sought me out to be your teacher."
+    2) "Surrender."
+    3) "Competence could be used to describe one of us."
+
+/// This is idle battle dialogue, Player does not respond:
+
+Throughout the battle, Vin may also say the following:
+"Honestly, you’ve held on longer than I thought. Long enough."
+"Let’s make this easy on all of us, shall we? Surrender."
+"You can’t win this!"
+"I’m going to take everything you have ever achieved!"
+"You cannot beat a hero!"
+"You are nothing!"
+"No one has any use for you anymore."
+"This is boring me. You’re only in the way."
+
+/// If Player is able to respond to Vin’s dialogue, then there should be no idle Battle Player dialogue.
+
+{If Player loses to Vin}
+/// Ending 1, Player loses to Vin.
+
+The smoke of battle subsides.
+
+Vin’s blade touches your neck.
+
+Vin: “Look at you, a sad old geezer, no chance of redemption.”
+
+Player: “...”
+
+Vin strikes.
+
+Vin: “Never come back.”
+
+<END>
+
+/// Ending 2a & 2b (Player convinces Vin to change & Player exiles Vin)
+
+/// Dialogue options that contribute to each ending are marked in () after the dialogue option.
+/// Each time the player selects a dialogue option for Ending 2a, Ending 2a gains one point.
+/// Each time the player selects a dialogue option for Ending 2b, Ending 2b gains a point.
+/// The results of the points are shown when the script splits below.
+
+Player: “Enough!”
+
+Vin: “No! It will… it will never be enough!”
+
+Player: “You need to stop this. You’ve lost.”
+
+Vin: “I haven’t lost until I’m dead.”
+
+Player:
+1) “Is that the way you want it to be?” (Ending 2a)
+2) “You don’t want me to make that promise.” (Ending 2b)
+3) “I won’t fight you.” (Ending 2a)
+
+Vin: “There is no other way.”
+
+Player: “You could just live.”
+
+Vin: “As who? Truly? Who knows me?”
+
+Player:
+1) “I do.” (Ending 2a)
+2) “Your home does.” (Ending 2b)
+3) “No one. And it is your fault.” (Ending 2b)
+
+Vin:
+{If 1} *resigned* “Like that means anything.”
+{If 2} *angry* “Like that means anything.”
+{If 3} “And what of you? You are alone through no fault of your own?”
+
+Player: “Maybe if you stopped setting villages ablaze, things would go better for you. You could be normal. Happy.”
+
+Vin: “With what? What is the point of this world without heroes?”
+
+Player:
+1) “What’s the point of anything? You cannot truly believe you are only searching for meaning. For some role you think needs to be filled.” (Ending 2a)
+2) “You are no hero.” (Ending 2b)
+3) “With life.” (Ending 2a)
+
+Vin: “No, I…”
+Vin: “I need to be something. This world needs something. Is that not enough?”
+
+Player:
+1) “Perhaps. But that something is not a hero. Perhaps this world has outgrown heroes.” (Ending 2a)
+2) “No. That will never be enough.” (Ending 2b)
+3) “I cannot answer that.” (Ending 2b)
+
+Vin:
+{If 1} “Heroes like you?”
+{If 2} “You will never understand! You are barely part of this world any longer. A faded relic.”
+{If 3} “I can! I am enough, the way you never were and never will be. You are not needed.”
+
+Player: “Yes. The world has moved on. It no longer needs me.”
+Player: “The young do not need me.”
+
+Vin:
+{If 1} “I did. To teach me, I—. Yes. I did. Isn’t that proof?”
+{If 2 } “Then you realize the truth.”
+{If 3 } “I needed you and you failed me. You failed all of us.”
+
+/// Here is where it splits. There are four dialogue options, so a possibility of a maximum of 4 points toward either ending.
+/// If there are 4 points for ending 2a, jump to Line 1. If there are 4 points for ending 2b, jump to Line 2.
+/// If chose choice 3 last turn, regardless of points, jump to Line 2 for ending 2b.
+/// If chose choice 1 last turn, regardless of points, jump to Line 1 for ending 2a.
+/// If chose choice 2 last turn and if there are 3:1 or 2:2 points, jump to Line 1 or 2 based on a random number generator?.
+
+Line 1 (Ending 2a):
+Player:
+{If 1 last turn} “Proof of? Your own deception?”
+{If 2 last turn} “We are well past the truth.”
+
+Vin: “I… I suppose.”
+Vin: “You truly think the world has moved on? That… I can move on?”
+
+Player: “Who am I to say? That’s for you to decide.”
+Player: “Stop trying to fill a role. No more gallant adventures for whatever you believe passes as respect. Be a person. Live.”
+
+Vin: “And what will you do?”
+
+Player: “The same.”
+
+Vin: “Will I... can I stay?”
+
+Player: “Up to you. I won’t stop you, though those whose homes you burned might object.”
+
+Vin: “Perhaps I will rebuild. Elsewhere.”
+Vin: “But first, here. Here I can rebuild. Do something... heroic.”
+
+Player: “Sure, kid.”
+
+Vin: “...Thank you.”
+
+Player: “You can repay me by never asking me to train you. Ever again.”
+
+Vin: “Deal.”
+
+<END>
+
+Line 2 (Ending 2b):
+Player:
+{If 2 (last turn)} “We are well past the truth.”
+{If 3 (last turn)} “I could not have failed you in a way that you did not fail me first.”
+
+Vin: “You will never learn. You will never change!”
+
+Player: “I could say the same.”
+Player: “Leave here. Never come back. If you do, I will know.”
+
+Vin: “And what will you do about it? How will you even hope to stop me?”
+
+Player: “I will, same as now.”
+Player: “Or, I will spread your story. Tell tales of your… heroics. I am sure the village is curious as to the cause of all their troubles.”
+Player: “You will finally receive some... respect.”
+
+Vin: “They will never believe you.”
+
+Player: “Would you like to test that theory? Or would you just like me to kill you?”
+
+Vin: “You are not worth it.”
+Vin: “I will go. Gain my respect, as you so aptly put it, elsewhere.”
+
+Player: “And never return.”
+
+Vin: “I heard you the first time. I’m not the one of us who is losing their hearing.”
+Vin: “You are the one who is truly losing something here.”
+Vin: “Goodbye.”
+
+Vin leaves.
+
+<END>
+
